@@ -1,0 +1,31 @@
+$("ul").on("click","li",function () {
+	$(this).toggleClass("tamamlanmis")
+});
+
+$("span").click(function (event) {
+
+	 $(this).parent().remove();	
+	 event.stopPropagation();
+});
+
+
+$("input[type='text']").keypress(function (event) {
+	
+	if (event.which === 13) {
+
+		var yeniItem =$(this).val();
+		console.log(yeniItem)
+		$(this).val("");
+		$("ul").append("<li><span><i class='fal fa-window-close'></i> </span>"+ yeniItem +"</li>");
+
+
+	}
+
+	
+});
+
+$(".far fa-bug").click(function (argument) {
+	$("input[type='text']").fadeToggle();
+});
+
+

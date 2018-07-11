@@ -1,0 +1,2 @@
+# jQueryYapilacaklarListesi
+Javascript Öğreniyorum
